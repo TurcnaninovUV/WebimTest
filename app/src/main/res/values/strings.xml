@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WebimTest</string>
+    <string name="from">Откуда</string>
+    <string name="dest">Куда</string>
+    <string name="sign_in">Вход</string>
+    <string name="login_hint">login</string>
+    <string name="pass_hint">password</string>
+</resources>

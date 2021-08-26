@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_margin_start">25dp</dimen>
+    <dimen name="text_size">18dp</dimen>
+    <dimen name="text_size_cost">20dp</dimen>
+    <dimen name="layout_margin_first">25dp</dimen>
+    <dimen name="layout_margin_two">15dp</dimen>
+    <dimen name="layout_margin_three">10dp</dimen>
+    <dimen name="padding_first">48dp</dimen>
+</resources>

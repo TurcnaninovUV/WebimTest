@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/layout_margin_first">
+
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_first"
+        android:layout_marginTop="@dimen/layout_margin_first"
+        android:textSize="@dimen/text_size_cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_two"
+        android:text="@string/from"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/cost"
+        app:layout_constraintTop_toBottomOf="@+id/cost"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/imageFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_three"
+        app:layout_constraintBottom_toBottomOf="@+id/textFrom"
+        app:layout_constraintStart_toEndOf="@+id/textFrom"
+        app:layout_constraintTop_toTopOf="@+id/textFrom"
+        app:srcCompat="@drawable/ic_baseline_airplanemode_active_24" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_first"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFrom"
+        app:layout_constraintStart_toEndOf="@+id/imageFrom"
+        app:layout_constraintTop_toTopOf="@+id/imageFrom"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_two"
+        android:text="@string/dest"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/textFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textFrom"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/imageDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageFrom"
+        app:layout_constraintStart_toStartOf="@+id/imageFrom"
+        app:layout_constraintTop_toTopOf="@+id/textDest"
+        app:srcCompat="@drawable/ic_baseline_local_airport_24" />
+
+    <TextView
+        android:id="@+id/dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="@+id/from"
+        app:layout_constraintTop_toTopOf="@+id/imageDest"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_margin_first"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/dest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/from"
+        tools:ignore="SpUsage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
